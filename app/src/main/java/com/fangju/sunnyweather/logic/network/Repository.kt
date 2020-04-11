@@ -1,6 +1,8 @@
 package com.fangju.sunnyweather.logic.network
 
 import androidx.lifecycle.liveData
+import com.fangju.sunnyweather.logic.dao.PlaceDao
+import com.fangju.sunnyweather.logic.model.Place
 import com.fangju.sunnyweather.logic.model.Weather
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -40,6 +42,12 @@ object Repository {
             }
         }
     }
+
+    fun savePlace(place: Place) = PlaceDao.savePlace(place)
+
+    fun getSavedPlace() = PlaceDao.getSavePlace()
+
+    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
 
     private fun <T> fire(context: CoroutineContext, block: suspend () -> Result<T>) =
         liveData(context) {
