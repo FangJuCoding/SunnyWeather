@@ -3,6 +3,7 @@ package com.fangju.sunnyweather.logic.model
 import com.google.gson.annotations.SerializedName
 
 /**
+ * 城市信息
  * Created by FangJu on 2020/4/9.
  */
 

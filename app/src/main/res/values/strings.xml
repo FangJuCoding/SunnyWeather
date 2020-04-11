@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">彩云天气</string>
     <string name="tips_input_address">请输入地址</string>
+    <string name="label_ver_line">|</string>
+    <string name="label_forecast">预报</string>
+    <string name="label_life_quality">生活指数</string>
+    <string name="label_cold">感冒</string>
+    <string name="label_dressing">穿衣</string>
+    <string name="label_ultraviolet">实时紫外线</string>
+    <string name="label_carWashing">洗车</string>
 </resources>
